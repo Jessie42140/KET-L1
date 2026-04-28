@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>剑一 Unit 5 单词复习 - Jessie老师英语工作室</title>
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+* {margin: 0; padding: 0; box-sizing: border-box;}
+html,body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: "幼圆", "Microsoft YaHei", sans-serif;
+    background: #fdf7f0;
+}
+
+/* 顶部纯文字标题区 */
+.top-header {
+    width: 100%;
+    background: #ffffff;
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(251, 189, 4, 0.1);
+}
+/* 固定主标题（纯文字+装饰） */
+.main-title {
+    font-size: 28px;
+    color: #d97706;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+.decor-icon {
+    color: #f59e0b;
+    animation: twinkle 2s infinite alternate;
+}
+@keyframes twinkle {
+    0% {transform: scale(1); opacity: 0.8;}
+    100% {transform: scale(1.2); opacity: 1;}
+}
+/* 自定义游戏副标题 */
+.game-subtitle {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* 游戏主体区 */
+.game-container {
+    width: 100%;
+    height: 600px;
+    margin: 20px 0;
+    overflow: hidden;
+    border: 5px solid #fcd34d;
+    border-radius: 8px;
+}
+.game-iframe {
+    width: 100%;
+    height: calc(100% + 80px);
+    transform: translateY(-80px);
+    border: none;
+}
+
+/* 底部二维码区 */
+.qrcode-section {
+    width: 100%;
+    background: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+.qrcode-title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.qrcode-img {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #fcd34d;
+    border-radius: 8px;
+}
+.qrcode-desc {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* 手机适配 */
+@media (max-width: 768px) {
+    .main-title {font-size: 22px;}
+    .game-subtitle {font-size: 20px;}
+    .game-container {height: 450px;}
+    .qrcode-img {width: 180px; height: 180px;}
+}
+</style>
+</head>
+<body>
+<!-- 纯文字顶部标题 -->
+<header class="top-header">
+    <div class="main-title">
+        <i class="fa-solid fa-star decor-icon"></i>
+        <span>Jessie老师英语工作室定制</span>
+        <i class="fa-solid fa-fireworks decor-icon"></i>
+    </div>
+    <div class="game-subtitle">剑一 Unit 5 单词复习</div>
+</header>
+
+<!-- 游戏区域 -->
+<div class="game-container">
+    <iframe src="https://musk-online.fbcontent.cn/pub-musk-ai-studio/workflow/file/document/DLDwxVBEAaLVEjgYN6PSjg.html" class="game-iframe"></iframe>
+</div>
+
+<!-- 二维码区域 -->
+<section class="qrcode-section">
+    <div class="qrcode-title">📱 扫码联系Jessie老师</div>
+    <img src="https://s41.ax1x.com/2026/04/28/pe5xIL6.jpg" alt="教师二维码" class="qrcode-img">
+    <div class="qrcode-desc">获取更多英语趣味游戏和学习资料</div>
+</section>
+</body>
+</html>
