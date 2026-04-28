@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>剑桥一级   Unit5 单词复习 - Jessie老师英语工作室</title>
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+* {margin: 0; padding: 0; box-sizing: border-box;}
+html,body {
+    width: 100%;
+    font-family: "幼圆", "Microsoft YaHei", sans-serif;
+    background: #fdf7f0;
+    /* 允许页面正常滚动 */
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* 顶部标题区 收窄高度 */
+.top-header {
+    width: 100%;
+    background: #fff;
+    padding: 12px 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(251,189,4,0.1);
+}
+/* 超小小拇指图标 不占地、不遮挡 */
+.decor-icon {
+    color: #f59e0b;
+    font-size: 16px;
+    animation: twinkle 2s infinite alternate;
+}
+@keyframes twinkle {
+    0% {transform: scale(1); opacity: 0.8;}
+    100% {transform: scale(1.08); opacity: 1;}
+}
+.main-title {
+    font-size: 22px;
+    color: #d97706;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+}
+.game-subtitle {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* 游戏区域 自适应、完整显示、可滚动 */
+.game-wrap {
+    width: 100%;
+    padding: 10px;
+}
+.game-container {
+    width: 100%;
+    height: 70vh;
+    border: 3px solid #fcd34d;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.game-iframe {
+    width: 100%;
+    height: calc(100% + 80px);
+    transform: translateY(-80px);
+    border: none;
+    display: block;
+}
+
+/* 二维码区域 */
+.qrcode-section {
+    width: 100%;
+    background: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+.qrcode-title {
+    font-size: 17px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.qrcode-img {
+    width: 160px;
+    height: 160px;
+    border: 2px solid #fcd34d;
+    border-radius: 8px;
+}
+.qrcode-desc {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #666;
+}
+
+/* 手机适配优化 */
+@media (max-width: 768px) {
+    .main-title {font-size: 19px;}
+    .decor-icon {font-size: 14px;}
+    .game-subtitle {font-size: 16px;}
+    .game-container {height: 60vh;}
+}
+</style>
+</head>
+<body>
+<header class="top-header">
+    <div class="main-title">
+        <i class="fa-solid fa-thumbs-up decor-icon"></i>
+        <span>Jessie老师英语工作室定制</span>
+        <i class="fa-solid fa-thumbs-up decor-icon"></i>
+    </div>
+    <div class="game-subtitle">剑桥一级   Unit5 单词复习</div>
+</header>
+
+<div class="game-wrap">
+    <div class="game-container">
+        <iframe src="https://musk-online.fbcontent.cn/pub-musk-ai-studio/workflow/file/document/DLDwxVBEAaLVEjgYN6PSjg.html" class="game-iframe"></iframe>
+    </div>
+</div>
+
+<section class="qrcode-section">
+    <div class="qrcode-title">📱 扫码联系Jessie老师</div>
+    <img src="https://s41.ax1x.com/2026/04/28/pe5xIL6.jpg" alt="教师二维码" class="qrcode-img">
+    <div class="qrcode-desc">获取更多英语趣味游戏和学习资料</div>
+</section>
+</body>
+</html>
