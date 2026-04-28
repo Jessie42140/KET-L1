@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>剑一 单词复习 - Jessie老师英语工作室</title>
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+* {margin:0;padding:0;box-sizing:border-box;}
+html,body {
+    width:100%;
+    font-family:"幼圆",Microsoft YaHei,sans-serif;
+    background:#fdf7f0;
+    overflow-x:hidden;
+}
+/* 顶部标题区 */
+.top-header {
+    width:100%;
+    background:#ffffff;
+    padding:15px 10px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(251,189,4,0.15);
+}
+.decor-icon {
+    color:#f59e0b;
+    font-size:16px;
+    animation:twinkle 2s infinite alternate;
+}
+@keyframes twinkle {
+    0% {transform:scale(1);opacity:0.8;}
+    100% {transform:scale(1.1);opacity:1;}
+}
+.main-title {
+    font-size:22px;
+    color:#d97706;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:8px;
+    flex-wrap:wrap;
+}
+.game-subtitle {
+    font-size:19px;
+    color:#333;
+    font-weight:bold;
+}
+/* 纯游戏区域 无框、无裁切、原生态 */
+.game-iframe {
+    width:100%;
+    height:85vh;
+    border:none;
+    display:block;
+    margin:15px 0;
+}
+/* 二维码底部 */
+.qrcode-section {
+    width:100%;
+    background:#fff;
+    padding:25px 15px;
+    text-align:center;
+    margin-top:10px;
+}
+.qrcode-title {
+    font-size:18px;
+    color:#333;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+.qrcode-img {
+    width:180px;
+    height:180px;
+    border-radius:8px;
+    border:none;
+}
+.qrcode-desc {
+    margin-top:10px;
+    font-size:16px;
+    color:#666;
+}
+/* 手机适配 */
+@media (max-width:768px){
+    .main-title {font-size:20px;}
+    .game-subtitle {font-size:17px;}
+    .game-iframe {height:75vh;}
+    .qrcode-img {width:160px;height:160px;}
+}
+</style>
+</head>
+<body>
+<header class="top-header">
+    <div class="main-title">
+        <i class="fa-solid fa-thumbs-up decor-icon"></i>
+        <span>Jessie老师英语工作室定制</span>
+        <i class="fa-solid fa-thumbs-up decor-icon"></i>
+    </div>
+    <div class="game-subtitle">剑一 单词复习</div>
+</header>
+
+<!-- 直接嵌入已经干净的游戏，无裁切、无偏移、不会跑出飞象 -->
+<iframe src="file:///C:/Users/Jessie%20Lam/Desktop/%E6%96%B0%E5%BB%BA%20%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3.html" class="game-iframe"></iframe>
+
+<section class="qrcode-section">
+    <div class="qrcode-title">📱 扫码联系Jessie老师</div>
+    <img src="https://s41.ax1x.com/2026/04/28/pe5xIL6.jpg" alt="教师二维码" class="qrcode-img">
+    <div class="qrcode-desc">获取更多英语趣味游戏和学习资料</div>
+</section>
+</body>
+</html>
